@@ -29,7 +29,10 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, .logo {
+h1,
+h2,
+h3,
+.logo {
     font-family: 'Outfit', sans-serif;
     letter-spacing: 2px;
 }
@@ -136,8 +139,15 @@ nav ul li a:hover {
 }
 
 @keyframes pulse {
-    0% { opacity: 0.3; transform: translate(-50%, -50%) scale(1); }
-    100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1.2); }
+    0% {
+        opacity: 0.3;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    100% {
+        opacity: 0.6;
+        transform: translate(-50%, -50%) scale(1.2);
+    }
 }
 
 /* Portfolio Section */
@@ -174,12 +184,30 @@ nav ul li a:hover {
     gap: 20px;
 }
 
-.image-grid-2 { grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); }
-.image-grid-3 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
-.image-grid-4 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
-.video-gallery { grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); }
-.audio-gallery { grid-template-columns: 1fr; }
-.single-image { max-width: 600px; margin: 0 auto; }
+.image-grid-2 {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.image-grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.image-grid-4 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.video-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+.audio-gallery {
+    grid-template-columns: 1fr;
+}
+
+.single-image {
+    max-width: 600px;
+    margin: 0 auto;
+}
 
 .card {
     background: var(--card-bg);
@@ -196,7 +224,8 @@ nav ul li a:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px var(--primary-glow);
 }
 
-.card img, .card video {
+.card img,
+.card video {
     width: 100%;
     display: block;
     aspect-ratio: 1 / 1;
@@ -204,9 +233,17 @@ nav ul li a:hover {
     transition: var(--transition-smooth);
 }
 
-.image-grid-2 .card img { aspect-ratio: 16 / 9; }
-.video-gallery .card video { aspect-ratio: 16 / 9; }
-.single-image .card img { aspect-ratio: auto; }
+.image-grid-2 .card img {
+    aspect-ratio: 16 / 9;
+}
+
+.video-gallery .card video {
+    aspect-ratio: 16 / 9;
+}
+
+.single-image .card img {
+    aspect-ratio: auto;
+}
 
 .card-caption {
     padding: 15px;
@@ -235,10 +272,13 @@ audio {
 
 /* Contact Section */
 .contact-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    display: block;
     align-items: center;
+    text-align: center;
+}
+
+.contact-btn {
+    margin-top: 40px;
 }
 
 .contact-info {
@@ -258,7 +298,8 @@ form {
     gap: 20px;
 }
 
-.input-group input, .input-group textarea {
+.input-group input,
+.input-group textarea {
     width: 100%;
     padding: 15px;
     background: var(--card-bg);
@@ -269,7 +310,8 @@ form {
     transition: var(--transition-smooth);
 }
 
-.input-group input:focus, .input-group textarea:focus {
+.input-group input:focus,
+.input-group textarea:focus {
     border-color: var(--primary-color);
     outline: none;
     box-shadow: 0 0 10px var(--primary-glow);
@@ -336,11 +378,17 @@ footer {
     margin-top: 100px;
 }
 
-.text-center { text-align: center; }
+.text-center {
+    text-align: center;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
-    .contact-wrapper { grid-template-columns: 1fr; }
-    #hero h1 { font-size: 4rem; }
-    .gallery { grid-template-columns: 1fr !important; }
+    #hero h1 {
+        font-size: 4rem;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr !important;
+    }
 }
