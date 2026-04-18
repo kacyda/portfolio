@@ -216,6 +216,7 @@ nav ul li a:hover {
     overflow: hidden;
     transition: var(--transition-smooth);
     position: relative;
+    padding: 20px;
 }
 
 .card:hover {
@@ -255,7 +256,6 @@ nav ul li a:hover {
 /* Audio Player Skinning */
 audio {
     width: 100%;
-    padding: 20px;
 }
 
 /* About Section */
